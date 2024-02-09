@@ -11,6 +11,7 @@ public class ScoreTest {
 
         var score = new Score(subject, 5);
 
+        Assert.assertEquals(subject,score.getSubject());
         Assert.assertEquals(0,score.getPoints());
     }
 
