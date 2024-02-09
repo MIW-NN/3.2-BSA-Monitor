@@ -6,24 +6,17 @@ public class Score {
     private int points;
 
     public Score(Subject subject, double grade) {
-        this.subject = subject;
-        this.grade = grade;
-        if (grade >= subject.getPassMark()) {
-            points = subject.getPoints();
-        } else {
-            points = 0;
-        }
     }
 
     public Subject getSubject() {
-        return subject;
+        return new Subject("",0,0);
     }
 
     public double getGrade() {
-        return grade;
+        return 0;
     }
 
     public int getPoints() {
-        return points;
+        return 0;
     }
 }

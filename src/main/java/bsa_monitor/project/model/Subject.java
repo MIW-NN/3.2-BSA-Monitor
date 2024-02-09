@@ -6,20 +6,17 @@ public class Subject {
     private double passMark;
 
     public Subject(String name, int points, double passMark) {
-        this.name = name;
-        this.points = points;
-        this.passMark = passMark;
     }
 
     public String getName() {
-        return name;
+        return "";
     }
 
     public int getPoints() {
-        return points;
+        return 0;
     }
 
     public double getPassMark() {
-        return passMark;
+        return 0;
     }
 }
