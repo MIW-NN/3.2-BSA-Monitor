@@ -1,22 +1,26 @@
 package bsa_monitor.project.model;
 
 public class Score {
-    private Subject subject;
-    private double grade;
-    private int points;
+    private Vak vak;
+    private double cijfer;
+    private int behaaldePunten;
 
-    public Score(Subject subject, double grade) {
+    public Score(Vak vak, double cijfer) {
+        // TODO
     }
 
-    public Subject getSubject() {
-        return new Subject("",0,0);
+    public Vak getVak() {
+        // TODO
+        return new Vak("",0,0);
     }
 
-    public double getGrade() {
+    public double getCijfer() {
+        // TODO
         return 0;
     }
 
-    public int getPoints() {
+    public int getBehaaldePunten() {
+        //TODO
         return 0;
     }
 }
