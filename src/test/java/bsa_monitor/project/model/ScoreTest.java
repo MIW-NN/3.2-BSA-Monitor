@@ -7,20 +7,20 @@ public class ScoreTest {
 
     @Test
     public void whenCreatingScoreWithFailingGrade_expectNoPoints() {
-        var subject = new Subject("subjectname",5,5.5);
+        var vak = new Vak("subjectname", 5, 5.5);
 
-        var score = new Score(subject, 5);
+        var score = new Score(vak, 5);
 
-        Assert.assertEquals(subject,score.getSubject());
-        Assert.assertEquals(0,score.getPoints());
+        Assert.assertEquals(vak, score.getVak());
+        Assert.assertEquals(0, score.getPunten());
     }
 
     @Test
     public void whenCreatingScoreWithPassingGrade_expectAllPoints(){
-        var subject = new Subject("subjectname",5,5.5);
+        var vak = new Vak("subjectname", 5, 5.5);
 
-        var score = new Score(subject, 6);
+        var score = new Score(vak, 6);
 
-        Assert.assertEquals(5,score.getPoints());
+        Assert.assertEquals(5, score.getPunten());
     }
 }

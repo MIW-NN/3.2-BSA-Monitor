@@ -1,29 +1,29 @@
 package bsa_monitor.project.model;
 
 public class Score {
-    private Subject subject;
-    private double grade;
-    private int points;
+    private Vak vak;
+    private double cijfer;
+    private int punten;
 
-    public Score(Subject subject, double grade) {
-        this.subject = subject;
-        this.grade = grade;
-        if (grade >= subject.getPassMark()) {
-            points = subject.getPoints();
+    public Score(Vak vak, double cijfer) {
+        this.vak = vak;
+        this.cijfer = cijfer;
+        if (cijfer >= vak.getCesuur()) {
+            punten = vak.getPunten();
         } else {
-            points = 0;
+            punten = 0;
         }
     }
 
-    public Subject getSubject() {
-        return subject;
+    public Vak getVak() {
+        return vak;
     }
 
-    public double getGrade() {
-        return grade;
+    public double getCijfer() {
+        return cijfer;
     }
 
-    public int getPoints() {
-        return points;
+    public int getPunten() {
+        return punten;
     }
 }
