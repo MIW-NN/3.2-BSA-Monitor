@@ -23,7 +23,7 @@ public class Score {
         return cijfer;
     }
 
-    public int getPunten() {
+    public int getBehaaldePunten() {
         return punten;
     }
 }

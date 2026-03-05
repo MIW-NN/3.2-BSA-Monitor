@@ -40,7 +40,7 @@ Het in te voeren cijfer dient tussen de %.1f en %.1f te zijn.
 Probeer nogmaals: ", ONDERGRENSCIJFER, BOVENGRENSCIJFER );
                 } else {
                     scores[vakTeller] = new Score(vakken[vakTeller], cijfer);
-                    totaalBehaaldePunten += scores[vakTeller].getPunten();
+                    totaalBehaaldePunten += scores[vakTeller].getBehaaldePunten();
                     incorrectInput = false;
                 }
             }
@@ -51,7 +51,7 @@ Probeer nogmaals: ", ONDERGRENSCIJFER, BOVENGRENSCIJFER );
         for (int scoreTeller = 0; scoreTeller < scores.length; scoreTeller++) {
             System.out.printf("Vak/project: %-30s Cijfer: %-4.1f Behaalde punten: %-3d
 ",
-                    scores[scoreTeller].getVak().getNaam(), scores[scoreTeller].getCijfer(), scores[scoreTeller].getPunten());
+                    scores[scoreTeller].getVak().getNaam(), scores[scoreTeller].getCijfer(), scores[scoreTeller].getBehaaldePunten());
         }
 
         // print totaal aantal behaalde punten
